@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Header -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-left">
@@ -57,9 +56,7 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
-        <!-- Home Section -->
         <section id="home" class="section active">
             <div class="hero-centered">
                 <div class="hero-content">
@@ -73,7 +70,6 @@
                 </div>
             </div>
 
-            <!-- Features Section -->
             <div class="features">
                 <div class="container">
                     <h2 class="section-title">Our Features</h2>
@@ -103,7 +99,6 @@
             </div>
         </section>
 
-        <!-- Login Section -->
         <section id="login" class="section">
             <div class="auth-container">
                 <div class="auth-card">
@@ -132,7 +127,6 @@
             </div>
         </section>
 
-        <!-- Signup Section -->
         <section id="signup" class="section">
             <div class="auth-container">
                 <div class="auth-card">
@@ -165,7 +159,6 @@
             </div>
         </section>
 
-        <!-- Crop Recommendation Section -->
         <section id="crop-recommendation" class="section">
             <div class="container">
                 <div class="section-header">
@@ -177,6 +170,12 @@
                 
                 <div class="crop-form-container">
                     <form id="crop-form" class="crop-form">
+                        
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <button type="button" id="sync-btn" class="btn" style="background-color: #2196F3; color: white; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                                <i class="fas fa-wifi"></i> Get Live Sensor Data
+                            </button>
+                        </div>
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="nitrogen">Nitrogen (N) - ppm</label>
@@ -242,7 +241,6 @@
             </div>
         </section>
 
-        <!-- Weed Detection Section -->
         <section id="weed-detection" class="section">
             <div class="container">
                 <div class="section-header">
@@ -300,7 +298,6 @@
         </section>
     </main>
 
-    <!-- Loading Overlay -->
     <div id="loading-overlay" class="loading-overlay" style="display: none;">
         <div class="loading-spinner">
             <div class="spinner"></div>
@@ -308,7 +305,6 @@
         </div>
     </div>
 
-    <!-- Toast Notifications -->
     <div id="toast-container" class="toast-container"></div>
 
     <script src="script.js"></script>
